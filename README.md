@@ -1,4 +1,4 @@
-# Django Ecommerce Server
+# Django Wiki Server
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=ffffff)
 ![Django](https://img.shields.io/badge/-Django-043728?style=flat-square&logo=django)
