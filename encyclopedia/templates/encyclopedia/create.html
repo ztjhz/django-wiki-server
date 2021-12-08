@@ -1,0 +1,25 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create Entry
+{% endblock %}
+
+{% block body %}
+    <h1>Create Entry</h1>
+
+    <form action="{% url 'create' %}" method="POST">
+        {% csrf_token %}
+        <div class="row m-2">
+            <div class="d-inline-flex mr-3">Title:</div>
+            <input type="text" name="title" autofocus>
+        </div>
+        <div class="row m-2">
+            <div class="d-inline-flex mr-3">Text:</div>
+            <textarea name="text"></textarea>
+        </div>
+        <div class="row m-2">
+            <input type="submit" class="btn btn-primary" value="Save">
+        </div>
+    </form>
+
+{% endblock %}

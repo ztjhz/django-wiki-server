@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1>Edit {{ title }}</h1>
+
+    <form action="{% url 'edit' %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="edit" value="true">
+        <div class="row m-2">
+            <div class="d-inline-flex mr-3">Title:</div>
+            <input type="text" name="title" value="{{title}}" disabled>
+            <input type="hidden" name="title" value="{{title}}">
+        </div>
+        <div class="row m-2">
+            <div class="d-inline-flex mr-3">Text:</div>
+            <textarea name="text" autofocus>{{ content }}</textarea>
+        </div>
+        <div class="row m-2">
+            <input type="submit" class="btn btn-primary" value="Save">
+        </div>
+    </form>
+
+{% endblock %}
