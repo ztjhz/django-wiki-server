@@ -7,8 +7,6 @@ Developed a backend `📚 wiki` server using django
 
 Users will be able to:
 
-Accounts:
-
 1. View Wiki Page
 2. Edit Wiki Page
 3. Markdown Support
@@ -17,7 +15,7 @@ Accounts:
 
 ## Demo Video
 
-https://user-images.githubusercontent.com/59118459/145214867-9e02e032-916c-4036-9a8e-a0e7361b9b1a.mp4
+https://user-images.githubusercontent.com/59118459/145217816-d33b7d1f-7b53-4d00-b456-05e7b4761686.mp4
 
 <br />
 
